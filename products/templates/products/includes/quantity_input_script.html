@@ -1,10 +1,10 @@
 <script type="text/javascript">
     function handleEnableDisable(itemId) {
         var currentValue = parseInt($(`#id_qty_${itemId}`).val());
-        var minusDisabld = currentValue < 2;
+        var minusDisabled = currentValue < 2;
         var plusDisabled = currentValue > 98;
-        $(`#decrement-qty_${itemID}`).prop('disabled', minusDisabled);
-        $(`#increment-qty_${itemID}`).prop('disabled', plusDisabled);
+        $(`#decrement-qty_${itemId}`).prop('disabled', minusDisabled);
+        $(`#increment-qty_${itemId}`).prop('disabled', plusDisabled);
     }
     $('.increment-qty').click(function(e) {
         e.preventDefault();
